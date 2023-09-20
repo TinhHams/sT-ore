@@ -277,35 +277,38 @@ header {
     margin-top: 28px;
 }
 
-#blog .blog-box {
+#blog .blog-card {
     text-align: left;
     width: 30%;
     background-color: #F1F0E8;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #618264;
-    border-radius: 4px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     cursor: pointer;
     position: relative;
 }
 
-#blog .blog-box:hover {
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+#blog .blog-card:hover {
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.2);
 }
 
-#blog .blog-box img {
-    width: 52px;
+#blog .blog-card img {
+    width: 60px;
     border-radius: 50%;
     position: absolute;
-    top: -16px;
-    left: -24px;
+    top: -24px;
+    right: 24px;
 }
 
-#blog .blog-box .blog-detail {
+#blog .blog-card .blog-detail {
     padding: 12px 28px;
-    text-align: justify;
 }
 
-#blog .blog-box .blog-detail .feedback {
+#blog .blog-card .blog-detail p {
+    font-weight: lighter;
+
+}
+
+#blog .blog-card .blog-detail .feedback {
     display: block;
     text-align: right;
 }
