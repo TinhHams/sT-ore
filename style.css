@@ -59,10 +59,7 @@ header {
 }
 
 .brand {
-    color: #D0E7D2;
-    font-size: 28px;
-    font-weight: 600;
-    font-style: italic;
+    width: 80px;
 }
 
 .nav {
@@ -153,7 +150,6 @@ header {
 #feature h2 {
     color: #618264;
     text-align: center;
-    margin-top: 28px;
 }
 
 #feature .feature-body {
@@ -194,7 +190,6 @@ header {
 
 #bookshelf h2 {
     color: #618264;
-    margin-top: 28px;
 }
 
 #bookshelf .book-card {
@@ -215,7 +210,8 @@ header {
 }
 
 #bookshelf .book-card img {
-    width: 100%;
+    width: 90%;
+    height: 70%;
     border-radius: 12px;
 }
 
@@ -249,7 +245,7 @@ header {
     background-color: #618264;
     color: #FAF1E4;
     border: 1px solid #D0E7D2;
-    position:absolute;
+    position: absolute;
     bottom: 24px;
     right: 12px;
 }
@@ -261,9 +257,99 @@ header {
     padding-top: 20px;
 }
 
+/* Blog */
 
+#blog {
+    text-align: center;
+}
 
+#blog h2, 
+#blog h4 {
+    color: #618264;
+    font-weight: 600;
+}
 
+#blog .blog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
 
+#blog .blog-box {
+    text-align: left;
+    width: 30%;
+    background-color: #F1F0E8;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #618264;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+#blog .blog-box:hover {
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+}
+
+#blog .blog-box img {
+    width: 52px;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    left: -24px;
+}
+
+#blog .blog-box .blog-detail {
+    padding: 12px 28px;
+    text-align: justify;
+}
+
+#blog .blog-box .blog-detail .feedback {
+    display: block;
+    text-align: right;
+}
+
+/* Contact */
+
+/* Footer */
+
+#footer {
+    background-color: #618264;
+    padding: 20px 80px;
+}
+
+#footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#footer .footer-content .footer-link {
+    display: flex;
+    gap: 40px;
+}
+
+#footer .footer-content .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .footer-content .footer-cpr {
+    color: #FAF1E4;
+}
+
+#footer .footer-content .footer-box a {
+    padding: 12px 20px;
+    color: #D0E7D2;
+    transition: 0.3s ease;
+}
+
+#footer .footer-content .footer-box a:hover {
+    color: #FAF1E4;
+}
 
 
