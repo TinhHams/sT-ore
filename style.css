@@ -410,6 +410,10 @@ header {
 /* Responsive - Media Query */
 
 @media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
     #navbar { 
         display: flex;
         flex-direction: column;
@@ -462,4 +466,38 @@ header {
         left: 30px;
         font-size: 24px;
     }
+
+    #hero {
+        height: 70vh;
+        padding: 0 40px; 
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .feature-body {
+        margin: 16px 16px;
+    }
+
+    #bookshelf .books {
+        justify-content: center;
+    }
+
+    #bookshelf .books .book-card {
+        margin: 16px;
+    }
+
+    #footer {
+        padding: 20px 40px;
+    }
+
+    #footer .follow,
+    #footer .about-us,
+    #footer .our-store {
+        text-align: center;
+    }
+
+    
 }
