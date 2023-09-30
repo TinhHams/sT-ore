@@ -100,6 +100,10 @@ header {
     left: 20px;
 }
 
+#close {
+    display: none;
+}
+
 #mobile {
     display: none;
     align-items: center;
@@ -444,9 +448,15 @@ header {
         color: #FAF1E4;
         font-size: 24px;
         padding-left: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-cart {
+        display: none;
     }
     
     #close {
+        display: initial;
         position: absolute;
         top: 30px;
         left: 30px;
