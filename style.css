@@ -39,6 +39,10 @@ a {
     text-decoration: none;
 }
 
+main section {
+    padding-top: 62px!important;
+}
+
 .section-p1 {
     padding: 40px 80px;
 }
@@ -52,8 +56,8 @@ header {
     padding: 20px 80px;
     background: #618264;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    z-index: 999;
     position: sticky;
+    z-index: 999;
     top: 0;
     left: 0;
 }
@@ -94,6 +98,11 @@ header {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
 }
 
 /* Hero */
@@ -147,19 +156,15 @@ header {
 
 /* Feature */
 
-#feature h2 {
-    color: #618264;
-    text-align: center;
-}
-
 #feature .feature-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .feature-card {
-    width: 240px;
+    width: 180px;
     text-align: center;
     padding: 24px 16px;
     box-shadow: 20px 20px 32px rgba(0, 0, 0, 0.03);
@@ -171,6 +176,10 @@ header {
 
 .feature-card:hover {
     box-shadow: 12px 12px 52px rgba(70, 62, 221, 0.1);
+}
+
+.feature-card img {
+    width: 100%;
 }
 
 .feature-card h6 {
@@ -387,4 +396,60 @@ header {
 #footer .footer-cpr {
     text-align: center;
     padding: 20px 80px 0 80px;
+}
+
+/* Cart */
+
+
+
+
+/* Responsive - Media Query */
+
+@media (max-width: 799px) {
+    #navbar { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e3e3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 24px;
+    }
+
+    #navbar li a, 
+    #navbar a {
+        color: #435334;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }  
+    
+    #mobile i {
+        color: #FAF1E4;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+    }
 }
