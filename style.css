@@ -443,6 +443,11 @@ header {
         color: #435334;
     }
 
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+    background: #435334;
+}
+
     #mobile {
         display: flex;
         align-items: center;
@@ -470,7 +475,7 @@ header {
     #hero {
         height: 70vh;
         padding: 0 40px; 
-        background-position: top 30% right 30%;
+        background-position: top 32% right 32%;
     }
 
     #feature {
