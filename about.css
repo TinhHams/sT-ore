@@ -108,7 +108,7 @@ header {
     height: 60px;
     width: 440px;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     right: 20px;
     top: 50vh;
 }
