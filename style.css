@@ -518,6 +518,48 @@ header {
     font-size: 1rem;
 }
 
+/* Blog Page */
+
+#blog-page h2 {
+    color: #618264;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 60px auto;
+}
+
+.blog-container .weekly-blog {
+    background-color: #d0e7d2;
+    border-radius: 12px;
+    padding: 60px;
+    width: 60%;
+    float: right;
+    text-align: justify;
+}
+
+.blog-container .weekly-img {
+    width: 16%;
+    border-radius: 12px;
+}
+
+.blog-container .weekly-blog h4 {
+    color: #435334;
+}
+
+.blog-container .weekly-blog h5 {
+    text-align: right;
+}
+
+.blog-container.reverse {
+    flex-direction: row-reverse;
+}
+
 /* Banner */
 
 #banner {
