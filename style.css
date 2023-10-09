@@ -660,6 +660,10 @@ header {
     align-items: center;
 }
 
+#contact-details .details ul li p {
+    margin-bottom: 16px;
+}
+
 #contact-details .map iframe {
     border-radius: 12px;
 }
