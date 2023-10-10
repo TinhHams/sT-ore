@@ -815,6 +815,7 @@ header {
 
 #subtotal {
     border: 1px solid #618264;
+    border-radius: 12px;
     padding: 20px 40px;
 }
 
