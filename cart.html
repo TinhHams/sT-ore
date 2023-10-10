@@ -23,9 +23,9 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./bookshelf.html">Bookshelf</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li><a class="active" href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li class="navbar-cart">
-                        <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+                        <a class="active" href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
                     </li>
 
                     <a><i id="close" class="fa-solid fa-xmark"></i></a>
@@ -39,59 +39,79 @@
 
         <main>
             <section id="blog-header" class="page-header">
-                <h2>Contact <img src="./pics/brand.png" width="112" alt="" /></h2>
+                <h2><img src="./pics/brand.png" width="112" alt="" /> Cart</h2>
 
-                <h4>Talk with us for more</h4>
+                <h4>Last step to purchase</h4>
             </section>
 
-            <section id="contact-details" class="section-p1">
-                <div class="details">
-                    <span>Get In Touch</span>
-                    <h2>Visit our store or contact us here</h2>
-                    <h3>Our store Information</h3>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>store@gmail.com</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <p>0938 --- ---</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-clock"></i>
-                            <p>8:AM - 8:PM from Monday to Sunday</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>82 đường 27, phường Hiệp Bình Chánh, TP. Thủ Đức, TP. Hồ Chí Minh</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.734753492057!2d106.73077717481887!3d10.831599258174068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527d2c5f15087%3A0xc88497e0c3854163!2zODIgxJAuIDI3LCBIaeG7h3AgQsOsbmggQ2jDoW5oLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1696819454230!5m2!1svi!2s"
-                        width="600"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
+            <section id="cart" class="section-p1">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Product</td>
+                            <td>Image</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                            <td>Remove</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuổi trẻ đáng giá bao nhiêu?</td>
+                            <td><img src="./pics/library/Tuổi trẻ đáng giá bao nhiêu.jpg" alt="" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><input type="number" value="1" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Giữa hai vương quốc</td>
+                            <td><img src="./pics/library/Giữa hai vương quốc.jpg" alt="" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><input type="number" value="1" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Rừng Na-Uy</td>
+                            <td><img src="./pics/library/Rừng Na-uy.jpg" alt="" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><input type="number" value="1" /></td>
+                            <td>80.000 vnđ</td>
+                            <td><i class="fa-regular fa-circle-xmark"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <section id="form-details">
-                <form action="">
-                    <span>Leave A Message</span>
-                    <h2>We'd love to hear from you</h2>
-                    <input type="text" placeholder="Your Name" name="" id="" /><br />
-                    <input type="email" placeholder="your-email@gmail.com" name="" id="" /><br />
-                    <input type="text" placeholder="Subject" name="" id="" /><br />
-                    <textarea name="" id="" placeholder="Your Message" cols="40" rows="20"></textarea><br />
-                    <button class="">Submit</button>
-                </form>
+            <section id="cart-add" class="section-p1">
+                <div id="coupon">
+                    <h3>Apply Coupon</h3>
+                    <div>
+                        <input type="text" placeholder="Enter your coupon here" />
+                        <button>Apply</button>
+                    </div>
+                </div>
+
+                <div id="subtotal">
+                    <h3>Cart Totals</h3>
+                    <table>
+                        <tr>
+                            <td>Cart Subtotal</td>
+                            <td>240.000 vnđ</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>0 vnđ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td>0 vnđ</td>
+                        </tr>
+                    </table>
+                    <button>Purchase</button>
+                </div>
             </section>
         </main>
 
