@@ -21,11 +21,12 @@
                 <ul id="navbar" class="nav">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./bookshelf.html">Bookshelf</a></li>
-                    <li><a class="active" href="#">Blog</a></li>
+                    <li><a href="#bookshelf">Bookshelf</a></li>
+                    <li><a class="active" href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li class="navbar-cart">
                         <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+                        <span class="quantity">0</span>
                     </li>
 
                     <a><i id="close" class="fa-solid fa-xmark"></i></a>
@@ -46,11 +47,11 @@
 
             <section id="blog-page" class="section-p1">
                 <div class="blog-box">
-                    <h2>01 - 10 - 2023</h2>
                     <div class="blog-container">
-                        <img class="weekly-img" src="./pics/library/Điều kỳ diệu của tiệm tạp hóa Namiya.jpg" alt="" />
+                        <img class="weekly-img" src="./pics/library/book8.jpg" alt="" />
 
                         <div class="weekly-blog">
+                            <h2>01 / 10</h2>
                             <h4>
                                 "Khi đối mặt với hai sự lựa chọn, hãy tung đồng xu lên... không phải ta chọn sấp hay
                                 ngửa... mà là trong lúc nó rơi xuống, ta mới biết bản thân mình đang hi vọng điều gì."
@@ -66,11 +67,12 @@
                 </div>
 
                 <div class="blog-box">
-                    <h2>02 - 10 - 2023</h2>
                     <div class="blog-container reverse">
-                        <img class="weekly-img" src="./pics/library/Tuổi trẻ đáng giá bao nhiêu.jpg" alt="" />
+                        <img class="weekly-img" src="./pics/library/book21.jpg" alt="" />
 
                         <div class="weekly-blog">
+                            <h2 class="cal-opp">02 / 10</h2>
+
                             <h4>
                                 "Những ngày tuổi trẻ tưởng dài rộng mênh mông nhưng kì thực lại rất hữu hạn ngắn ngủi.
                                 Nên nếu bạn còn trẻ, hãy học cách để biến tuổi trẻ của bạn thành vô giá."
@@ -86,11 +88,11 @@
                 </div>
 
                 <div class="blog-box">
-                    <h2>03 - 10 - 2023</h2>
                     <div class="blog-container">
-                        <img class="weekly-img" src="./pics/library/Thư viện lúc nửa đêm.jpg" alt="" />
+                        <img class="weekly-img" src="./pics/library/book23.jpg" alt="" />
 
                         <div class="weekly-blog">
+                            <h2>03 / 10</h2>
                             <h4>
                                 "Liệu cuộc đời tôi, bằng một cách thần kì nào đó, có tránh được những đớn đau, tuyệt
                                 vọng, khổ sở, tan vỡ, cực nhọc, cô đơn, trầm uất không? Không. Nhưng tôi có muốn sống
@@ -101,17 +103,17 @@
                                 Suspendisse et justo iaculis metus mollis faucibus. Morbi tincidunt rutrum mauris, vitae
                                 congue enim suscipit sed. Aenean vitae.
                             </p>
-                            <h5>Trích Thư viện lúc nửa đêm - Matt Haig</h5>
+                            <h5>Trích Thư viện nửa đêm - Matt Haig</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="blog-box">
-                    <h2>04 - 10 - 2023</h2>
                     <div class="blog-container reverse">
-                        <img class="weekly-img" src="./pics/library/Giữa hai vương quốc.jpg" alt="" />
+                        <img class="weekly-img" src="./pics/library/book10.jpg" alt="" />
 
                         <div class="weekly-blog">
+                            <h2 class="cal-opp">04 / 10</h2>
                             <h4>
                                 "Tất cả mọi người sinh ra đều mang hai quốc tịch, một ở vương quốc của mạnh khỏe, một ở
                                 vương quốc của bệnh tật."
@@ -128,9 +130,9 @@
             </section>
 
             <section id="pagination" class="blog-pagination section-p1">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#">More</a>
 
-                <p class="page-number"><a href="#">1 / 3</a></p>
+                <!-- <p class="page-number"><a href="#">1 / 3</a></p> -->
             </section>
         </main>
 
@@ -152,7 +154,9 @@
                     <div class="footer-box">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                        <a href="https://maps.app.goo.gl/TFakxWHmL3ytGnMQ8" target="_blank"
+                            ><i class="fa-solid fa-location-dot"></i
+                        ></a>
                     </div>
                 </div>
 
@@ -160,7 +164,7 @@
                     <h4>About Us</h4>
                     <div class="footer-box">
                         <a href="#">Home</a>
-                        <a href="#about">About</a>
+                        <a href="./about.html">About</a>
                     </div>
                 </div>
 
@@ -171,14 +175,20 @@
                     </h4>
                     <div class="footer-box">
                         <a href="#feature">Feature</a>
-                        <a href="#bookshelf">Bookshelf</a>
-                        <a href="#blog">Blog</a>
+                        <a href="./bookshelf.html">Bookshelf</a>
+                        <a href="./blog.html">Blog</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-cpr">
                 <span>Copyright© 2023 - vangiatinh@gmail.com</span>
+                <div class="cpr-icons">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </footer>
     </body>

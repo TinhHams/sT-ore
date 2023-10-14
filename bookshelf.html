@@ -11,6 +11,11 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./style.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
         <script src="https://kit.fontawesome.com/1e16e2e5e0.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -26,6 +31,7 @@
                     <li><a href="./contact.html">Contact</a></li>
                     <li class="navbar-cart">
                         <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+                        <span class="quantity">0</span>
                     </li>
 
                     <a><i id="close" class="fa-solid fa-xmark"></i></a>
@@ -45,263 +51,7 @@
             </section>
 
             <section id="bookshelf" class="section-p1">
-                <div class="books">
-                    <div class="book-card" onclick="window.location.href='bookdetail.html';">
-                        <img src="./pics/library/Tuổi trẻ đáng giá bao nhiêu.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Tuổi trẻ đáng giá bao nhiêu?</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Giữa hai vương quốc.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Giữa hai vương quốc</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Thư viện lúc nửa đêm.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Thư viện lúc nửa đêm</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Thần chết làm thêm 300 yên 1 giờ.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Thần chết làm thêm 300 yên 1 giờ</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Nhà giả kim.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Nhà giả kim</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Điều kỳ diệu của tiệm tạp hóa Namiya.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Điều kỳ diệu của tiệm tạp hóa Namiya</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Điều vĩ đại đời thường.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Điều vĩ đại đời thường</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Lối sống tối giản của người Nhật.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Lối sống tối giản của người Nhật</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Ngày mai tôi sẽ khác.jpeg" alt="" />
-                        <div class="desc">
-                            <h5>Ngày mai tôi sẽ khác</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Sách tâm lý dành cho người nhạy cảm.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Sách tâm lý dành cho người nhạy cảm</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Colorful.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Colorful</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Nhà hàng không bao giờ nói không.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Nhà hàng không bao giờ nói không</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Càng kỷ luật, càng tự do.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Càng kỷ luật, càng tự do</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Cho tôi xin một vé đi tuổi thơ.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Cho tôi xin một vé đi tuổi thơ</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Ổn định hay tự do.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Ổn định hay tự do</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-
-                    <div class="book-card">
-                        <img src="./pics/library/Rừng Na-uy.jpg" alt="" />
-                        <div class="desc">
-                            <h5>Rừng Na-Uy</h5>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half"></i>
-                            </div>
-                            <h4>80.000 vnd</h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-plus add-cart"></i></a>
-                    </div>
-                </div>
+                <div class="books"></div>
             </section>
 
             <section id="pagination" class="section-p1">
@@ -329,7 +79,9 @@
                     <div class="footer-box">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                        <a href="https://maps.app.goo.gl/TFakxWHmL3ytGnMQ8" target="_blank"
+                            ><i class="fa-solid fa-location-dot"></i
+                        ></a>
                     </div>
                 </div>
 
@@ -337,7 +89,7 @@
                     <h4>About Us</h4>
                     <div class="footer-box">
                         <a href="#">Home</a>
-                        <a href="#about">About</a>
+                        <a href="./about.html">About</a>
                     </div>
                 </div>
 
@@ -348,15 +100,23 @@
                     </h4>
                     <div class="footer-box">
                         <a href="#feature">Feature</a>
-                        <a href="#bookshelf">Bookshelf</a>
-                        <a href="#blog">Blog</a>
+                        <a href="./bookshelf.html">Bookshelf</a>
+                        <a href="./blog.html">Blog</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-cpr">
                 <span>Copyright© 2023 - vangiatinh@gmail.com</span>
+                <div class="cpr-icons">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </footer>
+
+        <script src="./index.js"></script>
     </body>
 </html>

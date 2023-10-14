@@ -19,15 +19,18 @@
             <a href="#" class="brand"> <img class="brand" src="./pics/brand.png" alt="" /> </a>
 
             <div>
-                <ul class="nav">
+                <ul id="navbar" class="nav">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a class="active" href="#about">About</a></li>
-                    <li><a href="./bookshelf.html">Bookshelf</a></li>
+                    <li><a class="active" href="./about.html">About</a></li>
+                    <li><a href="#bookshelf">Bookshelf</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li class="navbar-cart">
                         <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+                        <span class="quantity">0</span>
                     </li>
+
+                    <a><i id="close" class="fa-solid fa-xmark"></i></a>
                 </ul>
             </div>
         </header>
@@ -92,10 +95,12 @@
                 <div class="follow">
                     <h4>Follow Us</h4>
 
-                    <div class="follow-icon">
+                    <div class="footer-box">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                        <a href="https://maps.app.goo.gl/TFakxWHmL3ytGnMQ8" target="_blank"
+                            ><i class="fa-solid fa-location-dot"></i
+                        ></a>
                     </div>
                 </div>
 
@@ -103,9 +108,10 @@
                     <h4>About Us</h4>
                     <div class="footer-box">
                         <a href="#">Home</a>
-                        <a href="#about">About</a>
+                        <a href="./about.html">About</a>
                     </div>
                 </div>
+
                 <div class="our-store">
                     <h4>
                         Our
@@ -113,13 +119,20 @@
                     </h4>
                     <div class="footer-box">
                         <a href="#feature">Feature</a>
-                        <a href="#bookshelf">Bookshelf</a>
-                        <a href="#blog">Blog</a>
+                        <a href="./bookshelf.html">Bookshelf</a>
+                        <a href="./blog.html">Blog</a>
                     </div>
                 </div>
             </div>
+
             <div class="footer-cpr">
                 <span>Copyright© 2023 - vangiatinh@gmail.com</span>
+                <div class="cpr-icons">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </footer>
     </body>

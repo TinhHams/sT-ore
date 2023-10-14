@@ -98,7 +98,24 @@ header {
     font-size: 16px;
     font-weight: 600;
     color: #d0e7d2;
-    transition: 0.3s ease;
+}
+
+.navbar-cart {
+    position: relative;
+}
+
+.navbar-cart span {
+    background-color: red;
+    border-radius: 50%;
+    color: #e3e3e3;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4px;
+    left: 60%;
+    padding: 0 4px;
 }
 
 .nav li a:hover,
@@ -109,7 +126,7 @@ header {
 .nav li a.active::after,
 .nav li a:hover::after {
     content: '';
-    width: 30%;
+    width: 25%;
     height: 2px;
     background: #faf1e4;
     position: absolute;
@@ -316,7 +333,8 @@ header {
     transition: 0.2s ease-out;
 }
 
-#bookshelf .books {
+#bookshelf .books,
+#bookshelf .bookshelf {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -463,6 +481,22 @@ header {
 #footer .footer-cpr {
     text-align: center;
     padding: 20px 80px 0 80px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .footer-cpr .cpr-icons {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .footer-cpr .cpr-icons a {
+    font-size: 32px;
+    color: #faf1e4;
 }
 
 /* Bookshelf Page */
@@ -573,27 +607,24 @@ header {
 
 /* Blog Page */
 
-#blog-page h2 {
-    color: #618264;
-    font-size: 1.7rem;
-    text-align: center;
-}
-
 .blog-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 60px auto;
+    margin: 60px auto 40px;
 }
 
 .blog-container .weekly-blog {
-    background-color: #d0e7d2;
+    background-color: #618264;
+    color: #faf1e4;
+    cursor: default;
     border-radius: 12px;
     padding: 60px;
     width: 60%;
     float: right;
     text-align: justify;
+    position: relative;
 }
 
 .blog-container .weekly-img {
@@ -601,9 +632,22 @@ header {
     border-radius: 12px;
 }
 
-.blog-container .weekly-blog h4 {
-    color: #435334;
+.blog-container .weekly-blog h2 {
+    position: absolute;
+    border-radius: 4px;
+    background-color: white;
+    color: #618264;
+    font-size: 2.4rem;
+    top: -10%;
+    padding: 8px;
+    font-style: italic;
+    outline: none;
+    /* transform: rotate(4deg); */
 }
+
+/* .blog-container .weekly-blog h2.cal-opp {
+    transform: rotate(-4deg);
+} */
 
 .blog-container .weekly-blog h5 {
     text-align: right;
@@ -676,6 +720,10 @@ header {
 
 #form-details {
     background-color: #d0e7d2;
+    background-image: url(./pics/form-bg1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #form-details form {
@@ -698,12 +746,19 @@ header {
 #form-details form button {
     background-color: #618264;
     color: #faf1e4;
+    font-weight: 600;
     border: 0;
     border-radius: 4px;
     padding: 16px 32px;
     cursor: pointer;
     align-self: flex-end;
     margin: 12px 0 40px 0;
+}
+
+#form-details form button:hover {
+    background-color: #faf1e4;
+    color: #618264;
+    transition: 0.3s ease-in;
 }
 
 /* Cart Page */
