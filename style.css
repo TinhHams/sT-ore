@@ -193,6 +193,10 @@ header {
 
 /* About Page */
 
+.about-hero img {
+    width: 100%;
+}
+
 .about-text {
     height: 60px;
     width: 440px;
