@@ -20,7 +20,7 @@
     </head>
     <body>
         <header>
-            <a href="#" class="brand"> <img class="brand" src="./pics/brand.png" alt="" /> </a>
+            <a href="./index.html" class="brand"> <img class="brand" src="./pics/brand.png" alt="" /> </a>
 
             <div>
                 <ul id="navbar" class="nav">
@@ -29,8 +29,8 @@
                     <li><a class="active" href="#bookshelf">Bookshelf</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li class="navbar-cart">
-                        <a href="./cart.html"><i class="fa-solid fa-bag-shopping cart-icon"></i></a>
+                    <li class="cart">
+                        <i class="fa-solid fa-bag-shopping cart-icon"></i>
                         <span class="quantity">0</span>
                     </li>
 
@@ -43,22 +43,65 @@
             </div>
         </header>
 
+        <section id="bookshelf-header" class="page-header">
+            <h2><img src="./pics/brand.png" width="112" alt="" /> bookshelf</h2>
+
+            <h4>Find your book, start your journey!</h4>
+        </section>
+
         <main>
-            <section id="bookshelf-header" class="page-header">
-                <h2><img src="./pics/brand.png" width="112" alt="" /> bookshelf</h2>
-
-                <h4>Find your book, start your journey!</h4>
-            </section>
-
             <section id="bookshelf" class="section-p1">
                 <div class="books"></div>
             </section>
 
-            <section id="pagination" class="section-p1">
-                <a href="#">1</a>
+            <section id="cart" class="section-p1 display-off">
+                <div class="modal">
+                    <div class="cart-menu">
+                        <span>Tên sách</span>
+                        <span>Hình ảnh</span>
+                        <span>Giá</span>
+                        <span>Số lượng</span>
+                        <span>Thành tiền</span>
+                        <span>Xóa khỏi giỏ</span>
+                    </div>
+                    <ul class="list-book"></ul>
+                </div>
+
+                <section id="cart-add" class="section-p1">
+                    <div id="coupon">
+                        <h3>Apply Coupon</h3>
+                        <div>
+                            <input type="text" placeholder="Enter your coupon here" />
+                            <button>Apply</button>
+                        </div>
+                    </div>
+
+                    <div id="subtotal">
+                        <h3>Cart Totals</h3>
+                        <table>
+                            <tr>
+                                <td>Tổng</td>
+                                <td class="cart-total">0</td>
+                            </tr>
+                            <tr>
+                                <td>Phí giao hàng</td>
+                                <td class="shipping">0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Thanh toán</strong></td>
+                                <td class="total">0</td>
+                            </tr>
+                        </table>
+                        <button>Purchase</button>
+                    </div>
+                </section>
+            </section>
+
+            <!-- <section id="pagination" class="section-p1">
+                <a href="./bookdetail.html">1</a>
                 <a href="#">2</a>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-            </section>
+            </section> -->
         </main>
 
         <footer id="footer">
